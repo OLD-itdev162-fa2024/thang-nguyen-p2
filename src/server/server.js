@@ -19,7 +19,7 @@ app.post("/checkout", async (req, res, next)=> {
                     name: item.name,
                     images: [item.product]
                 },
-                unit_amount: item.price * 100
+                unit_amount: item.price * 10
             })),
             mode: 'payment',
             succes_url: "http://localhost:4242/success.html",
